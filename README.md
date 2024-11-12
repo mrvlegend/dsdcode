@@ -17,11 +17,12 @@
             margin: 0;
         }
         .logo {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            max-width: 300px; /* Limit logo size for better appearance */
         }
         .search-container {
             width: 100%;
-            max-width: 600px;
+            max-width: 700px; /* Increased max width for a larger search bar */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -32,25 +33,30 @@
         }
         .search-input {
             width: 100%;
-            border: none;
+            border: 1px solid #ddd; /* Add border for better visibility */
             outline: none;
-            padding: 10px;
-            font-size: 16px;
+            padding: 12px; /* Increased padding for a more comfortable input area */
+            font-size: 18px; /* Increased font size for better readability */
             border-radius: 24px;
         }
         .search-button {
-            padding: 10px 20px;
+            padding: 12px 24px; /* Increased button padding */
             border: none;
             border-radius: 24px;
             background-color: #007BFF;
             color: white;
-            font-size: 16px;
+            font-size: 18px; /* Increased button font size */
             cursor: pointer;
             margin-left: 10px;
             transition: background-color 0.3s;
         }
         .search-button:hover {
             background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            .search-container {
+                width: 90%; /* Make search container responsive on smaller screens */
+            }
         }
     </style>
 </head>
