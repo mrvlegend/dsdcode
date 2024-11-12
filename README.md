@@ -106,6 +106,4 @@
             codeBlock.textContent = code;
 
             const copyButton = document.createElement('button');
-            copyButton.className = 'copy-button';
-            copyButton.textContent = 'Copy';
-            copyButton.onclick
+            copyButton
